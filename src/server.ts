@@ -1,9 +1,10 @@
-import express, { Request, Response } from 'express';
-import dotenv from 'dotenv';
+import express from 'express';
+import { config } from 'dotenv';
 import cors from 'cors';
+import { Request, Response } from 'express';
 
 // Initialize environment variables
-dotenv.config();
+config();
 
 const app = express();
 
